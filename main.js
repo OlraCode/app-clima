@@ -1,3 +1,8 @@
+document.getElementById("search").addEventListener('keydown', (e) => {
+    if (e.key === 'Enter'){
+        ConsultarTempo()
+    }
+})
 
 
 async function ConsultarTempo(){

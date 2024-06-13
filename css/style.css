@@ -14,9 +14,11 @@ body{
     justify-content: center;
     font-family: "Roboto", sans-serif;
     background-color: #06283D;
+    padding: 1rem;
 }
 main{
     background-color: #fff;
+    color:#06283D;
     width: 400px;
     height: 105px; /*105px 605px*/
     padding: 28px 18px;
