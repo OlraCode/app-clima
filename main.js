@@ -19,12 +19,16 @@ async function ConsultarTempo(){
     let data = await response.json()
     
     if (data.cod == '404'){
+        container.style.height = "500px"
         weather.style.display = "none"
         error.style.display = 'block'
+        error.classList.add('fade-in')
         return
     }
+
     error.style.display = "none"
-    weather.style.display = 'block'
+    error.classList.remove("fade-in")
+
     city_name.innerText = data.name
     temperature.innerHTML = `${parseInt(data.main.temp)}<span>ºC</span>`
     description.innerText = data.weather[0].description
@@ -49,4 +53,8 @@ async function ConsultarTempo(){
         default:
             image.src = ""
     }
+
+    weather.style.display = ''
+    weather.classList.add("fade-in")
+    container.style.height = "600px"
 }
