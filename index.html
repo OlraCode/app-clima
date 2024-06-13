@@ -13,8 +13,8 @@
     <main>
         <div class="search">
             <label for="search" class="material-symbols-outlined">location_on</label>
-            <input type="text" id="search" placeholder="Digite Sua Localização">
-            <button class="material-symbols-outlined">search</button>
+            <input type="text" id="search" placeholder="Digite Sua Localização" autocomplete="off">
+            <button class="material-symbols-outlined" onclick="ConsultarTempo()">search</button>
         </div>
 
         <div class="error">
@@ -23,7 +23,7 @@
         </div>
 
         <div class="weather">
-            <h1>Madureira</h1>
+            <h1 id="name">Madureira</h1>
             <img id="image" src="img/clear.png">
             <div class="temperature">
                 <h1 id="temperature">0ºc</h1>
