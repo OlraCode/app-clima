@@ -16,29 +16,37 @@
             <input type="text" id="search" placeholder="Digite Sua Localização">
             <button class="material-symbols-outlined">search</button>
         </div>
+
         <div class="error">
-            <h1>Oops!</h1>
-            <p>Localização Inválida</p>
+            <img src="img/404.png" alt="Error 404">
+            <p>Oops! Localização Inválida</p>
         </div>
+
         <div class="weather">
-            <div class="weather-image">
-                <img src="">
-            </div>
+            <h1>Madureira</h1>
+            <img id="image" src="img/clear.png">
             <div class="temperature">
-                <h1>0ºc</h1>
-                <p>Tempo aberto</p>
+                <h1 id="temperature">0ºc</h1>
+                <p id="description">Tempo aberto</p>
             </div>
+
             <div class="weather-description">
                 <div class="humidity">
                     <span class="material-symbols-outlined">water</span>
-                    <p>100%</p>
-                    <span class="description">Humidade</span>
+                    <div class="description">
+                        <p id="humidity">100%</p>
+                        <span>Humidade</span>
+                    </div>
                 </div>
+
                 <div class="wind">
                     <span class="material-symbols-outlined">air</span>
-                    <p>100Km/h</p>
-                    <span class="description">Velocidade do Vento</span>
+                    <div class="description">
+                        <p id="wind">100Km/h</p>
+                        <span>Vento</span>
+                    </div>
                 </div>
+
             </div>
         </div>
     </main>
